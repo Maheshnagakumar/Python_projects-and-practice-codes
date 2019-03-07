@@ -11,12 +11,12 @@ elif player1=="scissors" and player2=="paper":
 elif player1=="paper" and player2=="scissors":
     print("yayy player2 wins")
 elif player1=="ROCK" and player2=="paper":
-    print("yay!! player1 wins again")
+    print("yay!! player2 wins again")
 elif player1=="scissors" and player2=="ROCK":
     print("player2 wins:)")
 elif   player1=="paper" and player2=="scissors":
     print("player2 wins :)")
 elif   player1=="paper" and player2=="ROCK":
-    print("yay!!! player2 wins again")
+    print("yay!!! player1 wins again")
 else:
     print("Both are same,play again!!")
