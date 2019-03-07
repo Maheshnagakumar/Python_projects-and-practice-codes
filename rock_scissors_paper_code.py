@@ -4,24 +4,19 @@ print("PAPPER")
 player1=input("please enter your input of player1 : ")
 player2=input("please enter your input of player2 : ")
 
-if player1==player2:
-    print("huh !! It's tie")
-elif player1=="paper":
-    if player2=="scissors":
-        print("player2 wins!!")
-    elif player2=="rock":
-        print("player1 wins")
-elif player1=="scissors":
-    if player2=="rock":
-        print("player2 wins !!!")
-    elif player2=="paper":
-        print("player1 wins")
-elif player1=="rock":
-    if player2=="scissors":
-        print("player1 wins")
-    elif player2=="paper":
-        print("player2 wins")
+if player1=="ROCK" and player2=="scissors":
+    print("player1 wins:)")
+elif player1=="scissors" and player2=="paper": 
+    print("Player1 wins!!")
+elif player1=="paper" and player2=="scissors":
+    print("yayy player2 wins")
+elif player1=="ROCK" and player2=="paper":
+    print("yay!! player2 wins again")
+elif player1=="scissors" and player2=="ROCK":
+    print("player2 wins:)")
+elif   player1=="paper" and player2=="scissors":
+    print("player2 wins :)")
+elif   player1=="paper" and player2=="ROCK":
+    print("yay!!! player1 wins again")
 else:
-    print("Please enter your input") 
-	
-	
+    print("Both are same,play again!!")
