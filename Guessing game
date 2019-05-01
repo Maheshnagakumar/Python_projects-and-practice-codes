@@ -1,0 +1,11 @@
+import random
+random_num=random.randint(1,10)
+guess=None
+while guess!=random_num:
+    guess=int(input("please enter numbers from 1 to 10 : "))
+    if random_num < guess:
+        print("too high")
+    elif random_num > guess:
+        print("too low")
+    else:
+        print("you got it")
