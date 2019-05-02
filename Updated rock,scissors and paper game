@@ -1,0 +1,53 @@
+import random
+
+computer_wins=0
+player_wins=0
+winning_score=3
+
+while player_wins < winning_score and computer_wins < winning_score :
+    print(f"player_score: {player_wins} computer_score:{computer_wins}")
+    player=input("please enter your choice")
+    if player=="quit" or player=="q":
+        break
+    rand_in=random.randint(0,2)
+    if rand_in==0:
+        computer='rock'
+    elif rand_in==1:
+        computer="paper"
+    else:
+        computer="scissors"
+
+    if player==computer:
+        print("it's tie")
+    elif player=="scissors":
+        if computer=="ROCK":
+            print("player wins :)")
+            player_wins += 1
+        else:
+            print("computer wins:(")
+            computer_wins += 1
+    elif player=="paper":
+        if computer=="ROCK":
+            print("player wins")
+            player_wins += 1
+        else:
+            print("computer wins:(")
+            computer_wins += 1
+    elif player=="ROCK":
+        if computer=="paper":
+            print("computer wins:(")
+            computer_wins += 1
+        else:
+            print("player wins:)")
+            player_wins += 1
+    else:
+        print("please enter valid move")
+
+if player_wins<computer_wins:
+    print(f"Computer won :(  {computer_wins} matches")
+elif player_wins > computer_wins:
+    print("Player won!! {player_wins} matches")
+else:
+    print("HO No it's tie")
+
+print(f"FINAL SCORE : player_score: {player_wins} computer_score:{computer_wins}")
