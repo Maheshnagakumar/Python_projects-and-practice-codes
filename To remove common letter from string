@@ -1,6 +1,5 @@
 n=int(input("please enter your input"))
 stri="Mahesh"
-u="".join(stri)
 k=""
 for i in u:
     if u[n]!=i:
