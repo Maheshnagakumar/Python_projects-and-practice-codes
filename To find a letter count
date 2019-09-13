@@ -1,0 +1,9 @@
+n=int(input("please enter your input"))
+stri="Mahesh"
+u=list(stri)
+b=""
+for i in stri:
+    if i==stri[n]:
+        b+=i      
+
+print(len(b))    
