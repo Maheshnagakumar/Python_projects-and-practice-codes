@@ -1,0 +1,21 @@
+Method1:
+=======
+a=int(input("value please"))
+A=[]
+Sum=0
+for i in range(a):
+    A.append(input("value2"))
+for j in A:
+	Sum=Sum+int(j)
+
+print(Sum)
+
+Method2:
+=======
+a=int(input("value please"))
+b=(input("value2")).split()
+Sum=0
+for i in b:
+	Sum=Sum+int(i)
+print(Sum)
+
