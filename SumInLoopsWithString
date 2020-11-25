@@ -1,0 +1,9 @@
+h=int(input("main"))
+
+R=[]
+for i in range(h):
+	var=(input("value").split())
+	R.append(int(var[0])+int(var[1]))
+print(" ".join(map(str, R)))
+
+
