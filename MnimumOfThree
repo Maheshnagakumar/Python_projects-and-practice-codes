@@ -1,0 +1,16 @@
+U=int(input("please enter input"))
+
+
+R=[]
+for i in range(U):
+    A=input("val1").split()
+    if ((int(A[0]) > int(A[1])) and (int(A[2]) > int(A[1]))) or ((int(A[1]) < int(A[2])) and (int(A[1]) < int(A[0]))):
+    	R.append(int(A[1]))
+    elif ((int(A[1]) > int(A[0])) and (int(A[2]) > int(A[0]))) or ((int(A[0]) < int(A[2])) and (int(A[0]) < int(A[1]))):
+    	R.append(int(A[0]))
+    elif ((int(A[0]) > int(A[2])) and (int(A[1]) > int(A[2]))) or ((int(A[2]) < int(A[0])) and (int(A[2]) < int(A[1]))):
+    	R.append(int(A[2]))
+    else:
+    	print("retry")
+
+print(' '.join(map(str, R)))
