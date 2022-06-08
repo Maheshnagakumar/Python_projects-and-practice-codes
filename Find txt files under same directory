@@ -1,0 +1,3 @@
+import os,glob
+os.chdir("<Path>")
+for file in glob.glob("*.txt") or print(glob.glob("*.txt))
